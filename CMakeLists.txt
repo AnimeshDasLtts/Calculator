@@ -20,4 +20,4 @@ target_link_libraries(calculator ${CMAKE_CURRENT_SOURCE_DIR}/CppUTest/libCppUTes
 add_executable(calculator_test calculator_test.cpp)
 
 # Link the CppUTest library with the calculator test target
-target_link_libraries(calculator_test ${CMAKE_CURRENT_SOURCE_DIR}/CppUTest/libCppUTest.a)
+target_link_libraries(calculator CppUtest CppUtestExt)
