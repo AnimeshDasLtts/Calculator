@@ -4,6 +4,9 @@ project(Calculator)
 # Set the C++ standard to C++11
 set(CMAKE_CXX_STANDARD 11)
 
+##set the cpputest home
+CPPFLAGS += -I$(CPPUTEST_HOME)/include
+
 # Include directories for CppUTest headers
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/CppUTest/include)
 
