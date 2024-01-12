@@ -4,8 +4,7 @@ project(Calculator)
 # Set the C++ standard to C++11
 set(CMAKE_CXX_STANDARD 11)
 
-##set the cpputest home
-CPPFLAGS += -I$(CPPUTEST_HOME)/include
+
 
 # Include directories for CppUTest headers
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/CppUTest/include)
@@ -20,4 +19,4 @@ target_link_libraries(calculator ${CMAKE_CURRENT_SOURCE_DIR}/CppUTest/libCppUTes
 add_executable(calculator_test calculator_test.cpp)
 
 # Link the CppUTest library with the calculator test target
-target_link_libraries(calculator CppUtest CppUtestExt)
+target_link_libraries(Calculator_test CppUtest CppUtestExt)
